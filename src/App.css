@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+body{
+  font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
+  color: hsl(233, 26%, 24%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  color: hsl(233, 8%, 62%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-size: 40px;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul{
+  list-style-type: none;
+}
+
+.btn-home:hover{
   color: white;
+  background: rgb(83,232,123);
+  background: linear-gradient(90deg, rgba(83,232,123,1) 0%, rgba(64,203,238,1) 100%);
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-home{
+  padding: 15px 35px;
+  border-radius: 25px;
+  box-shadow: none;
+  font-weight: 700;
+  font-size: 10pt;
+  text-transform: none;
+  color: white;
+  background: rgb(83,232,123);
+  background: linear-gradient(90deg, rgba(83,232,123,1) 0%, rgba(64,203,238,1) 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar{
+  box-shadow: none;
+}
+
+.navbar-nav .nav-item .nav-link{
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #9698A6;
+}
+
+.nav-link:hover{
+  color: black;
+  font-weight: 700;
+  border-bottom: 4px solid rgb(83,232,123);
+}
+
+.img-header {
+    top: -260px;
+    position: absolute;
+    z-index: 1;
+    left: 118%;
+}
+
+.banner{
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 45vw center;  
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+
+.article{
+  background-color: hsl(0, 0%, 98%);
+}
+
+.banner h1{
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.card{
+  box-shadow: none;
+}
+
+.article{
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+.article .card-text{
+  font-size: 13px;
+}
+
+.article .card-img-top{
+  height: 175px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.choose{
+  background-color: hsl(220, 16%, 96%);
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.choose .card-text{
+  font-size: 16px;
+}
+
+footer{
+  background-color: hsl(233, 26%, 24%);
+  /* text-align: center; */
+}
+
+footer .link-footer{
+  color: white;
+  display: block;
+  padding: 6px;
+  font-size: 15px;
+  width: 120px;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+a:hover{
+  color: rgb(83,232,123);
+  text-decoration: none;
+}
+
+footer .social a svg:hover{
+  color: rgb(83,232,123);
+  
+}
+
+footer .social svg{
+  margin-right: 15px;
+}
+
+#svg:hover{
+  fill: rgb(83,232,123);
+}
+
+/* ================================ RESPONSIVE ============================= */
+
+@media(max-width: 998px){
+  .img-header{
+    position: initial;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 755px){
+  .banner h1{
+    font-size: 40px;
   }
+
+  .banner{
+    background-position: -34vw;
+    padding-bottom: 5%;
+    background-size: 179vw;
+    background-position-y: -15vw;
+  }
+
+  .banner p{
+    font-size: 15px;
+  }
+
+  .navbar .btn-home{
+    display: none;
+  }
+
+  .banner, .choose, .article, footer{
+    text-align: center;
+  }
+
+  .social{
+    margin-bottom: 20px;
+  }
+
+  .btn-footer{
+    margin-top: 20px;
+  }
+  
+  .menu-footer, .link-footer, .btn-footer{
+    display: inline-block;
+  }
+
+  .nav{
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: 93%;
+    top: 100px;
+    border-radius: 10px;
+  }
+  
 }
